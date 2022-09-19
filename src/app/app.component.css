@@ -1,0 +1,13 @@
+@font-face {
+  font-family: interFace;
+  src: url('../assets/font/interface/InterFace_Trial_Rg.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: interFace;
+  overflow: hidden;
+}

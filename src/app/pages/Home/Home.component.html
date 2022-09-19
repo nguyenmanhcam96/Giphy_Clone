@@ -1,0 +1,9 @@
+<div class="home-container">
+  <div class="logo">
+    <img  width="150" src="assets/logo/logo.png" alt="">
+    <app-search (sendSearchText)="sendSearchText($event)"></app-search>
+  </div>
+  <div class="content-display">
+    <app-display (loadMoreGif)="loadMoreGif($event)" [searchText]="searchText" [isSearching]="isSearching" [gifData]="gifData"></app-display>
+  </div>
+</div>

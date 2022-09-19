@@ -1,0 +1,18 @@
+
+<div class="gif-detail-container">
+  <div class="close">
+    <button (click)="closeDetail()">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+  <img class="gif-img" height="600" [src]="currentSelectedGif.images.downsized_medium.url" alt="" srcset="">
+  <div class="gif-info">
+    <b>{{currentSelectedGif.title}}</b>
+    <p>Uploaded By: {{currentSelectedGif.user.display_name}}</p>
+    <p>Uploaded: {{currentSelectedGif.update_datetime  | date}}</p>
+    <p>Ratings: {{currentSelectedGif.rating}}</p>
+  </div>
+</div>
+<div (click)="closeDetail()" class="backdrop">
+
+</div>

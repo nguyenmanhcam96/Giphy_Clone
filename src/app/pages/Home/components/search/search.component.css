@@ -1,0 +1,23 @@
+.search-bar {
+  width: 50%;
+  height: 50px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px ;
+  font-size: 20px;
+}
+.search-button {
+  background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 65px;
+  height: 65px;
+  margin-left: 5px;
+}
+.search-button i {
+  font-size: 20px;
+  color: #fff;
+}

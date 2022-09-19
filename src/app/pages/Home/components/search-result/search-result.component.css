@@ -1,0 +1,61 @@
+@import url('../../../../../assets/css/animation.css');
+
+*{
+  color: #fff;
+  font-family: interface;
+}
+
+.list-trending {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+  list-style-type: none;
+  margin-top: 1.5rem;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #121119;
+  padding: 1%;
+}
+img {
+  object-fit: contain;
+}
+.block-title {
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+.block-title span {
+  font-size: 20px;
+}
+.expand-link {
+  line-height: 50px;
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: #FFD43B;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #183153;
+  cursor: pointer;
+  text-transform: capitalize;
+  margin-top: 1.5rem;
+}
+.expand-link:hover {
+  cursor: pointer;
+  animation: expand 0.5s;
+}
+.image-item {
+  margin-right: 0 1% 1% 1%;
+  cursor: pointer;
+}
+

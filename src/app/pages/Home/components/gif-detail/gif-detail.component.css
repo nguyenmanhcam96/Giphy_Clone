@@ -1,0 +1,91 @@
+@import url('../../../../../assets/css/animation.css');
+.gif-detail-container {
+  max-width: 800px;
+  height: 500;
+  background-color: #adadad;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  animation: fadeIn 0.5s;
+  -webkit-animation: fadeIn 0.5s;
+  -moz-animation: fadeIn 0.5s;
+  -o-animation: fadeIn 0.5s;
+  -ms-animation: fadeIn 0.5s;
+  border-radius: 8px;
+}
+
+
+
+.gif-detail-container .gif-img {
+  width: 100%;
+  object-fit: fill ;
+}
+.gif-info {
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  font-family: Tahoma;
+  padding: 0.5rem 1rem;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-image: url('../../../../../assets/images/gradient.jpg');
+  background-position: top;
+  background-size: cover;
+}
+.gif-info p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+
+}
+.gif-info b {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.backdrop {
+  color: black;
+  opacity: 0.8;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+}
+.close {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  background-image: url('../../../../../assets/images/gradient.jpg');
+  background-position: top;
+  background-size: cover;
+
+}
+.close button {
+  border: none;
+  background: none;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.close i {
+  color: #fff;
+  font-size: 25px;
+}
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffcc8d;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
