@@ -70,3 +70,25 @@ img {
 .back-trending:hover {
   color: #FFD43B;
 }
+.title-bar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter {
+  margin-right: 10%;
+}
+.filter label {
+  margin-right: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+.filter input {
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  outline: none;
+}

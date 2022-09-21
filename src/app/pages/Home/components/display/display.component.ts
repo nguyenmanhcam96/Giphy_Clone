@@ -13,14 +13,15 @@ export class DisplayComponent implements OnInit {
   @Input() gifData: any;
   @Input() isSearching: boolean = false;
   @Input() searchText!: string;
+  @Input() totalCount!: number;
   @Output() loadMoreGif = new EventEmitter();
   currentSelectedGif!: object;
   currentSortBy: string = 'desc';
   currentLimit: number = 10;
-  totalCount!: number;
   currentOffSet: number = 0;
   gifDataSearched: any;
-  message: string = 'Trending'
+  message: string = 'Trending';
+  limit!: number;
   constructor(private http: HttpService) {
 
   }
@@ -77,5 +78,16 @@ export class DisplayComponent implements OnInit {
       limit: this.currentLimit
     }
     );
+  }
+  getLimitNumber() {
+    console.log(this.limit);
+    if(this.limit > 150) return;
+    this.currentLimit = this.limit;
+    this.isSearching ?  this.loadMoreGif.emit({
+      searchText: this.searchText,
+      limit: this.currentLimit
+    }) : this.loadMoreGif.emit({
+      limit: this.currentLimit
+    });
   }
 }

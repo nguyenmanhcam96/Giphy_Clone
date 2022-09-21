@@ -4,6 +4,6 @@
     <app-search (sendSearchText)="sendSearchText($event)"></app-search>
   </div>
   <div class="content-display">
-    <app-display (loadMoreGif)="loadMoreGif($event)" [searchText]="searchText" [isSearching]="isSearching" [gifData]="gifData"></app-display>
+    <app-display [totalCount]="totalCount" (loadMoreGif)="loadMoreGif($event)" [searchText]="searchText" [isSearching]="isSearching" [gifData]="gifData"></app-display>
   </div>
 </div>

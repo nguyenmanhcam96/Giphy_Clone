@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     this.http.getTrendingGif(sortBy, limit).subscribe((res:any)=>{
      if(res.meta.status == 200) {
       this.gifData = res.data;
-      this.totalCount = res.meta.count;
+      this.totalCount = res.pagination.count;
      }
     });
   }
@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
     this.http.searchGif(text, limit).subscribe((res:any)=>{
       if(res.meta.status == 200) {
         this.gifData = res.data;
+        this.totalCount = res.pagination.count;
        }
     });
   }

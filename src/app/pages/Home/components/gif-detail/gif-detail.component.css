@@ -25,6 +25,7 @@
 .gif-info {
   width: auto;
   height: auto;
+  min-height: 200px;
   background-color: #fff;
   font-family: Tahoma;
   padding: 0.5rem 1rem;

@@ -13,6 +13,7 @@ export class GifDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log(this.currentSelectedGif);
 
   }
   closeDetail() {

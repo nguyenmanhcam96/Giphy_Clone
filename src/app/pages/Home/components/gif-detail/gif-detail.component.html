@@ -8,9 +8,9 @@
   <img class="gif-img" height="600" [src]="currentSelectedGif.images.downsized_medium.url" alt="" srcset="">
   <div class="gif-info">
     <b>{{currentSelectedGif.title}}</b>
-    <p>Uploaded By: {{currentSelectedGif.user.display_name}}</p>
-    <p>Uploaded: {{currentSelectedGif.update_datetime  | date}}</p>
-    <p>Ratings: {{currentSelectedGif.rating}}</p>
+    <p >Uploaded By: {{currentSelectedGif.user?.display_name || 'No Display Name Available'}}</p>
+    <p *ngIf="currentSelectedGif?.update_datetime">Uploaded: {{currentSelectedGif.update_datetime   || 'No Date Available' | date}}</p>
+    <p *ngIf="currentSelectedGif?.rating">Ratings: {{currentSelectedGif.rating || 'No Rating Available'}}</p>
   </div>
 </div>
 <div (click)="closeDetail()" class="backdrop">
